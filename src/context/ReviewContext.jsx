@@ -6,12 +6,15 @@ const ReviewContext = createContext();
 export const ReviewProvider = ({children}) =>{
 
 
-     const [review, setReview] = useState(10);
+     const [topReview, setTopReview] = useState(10);
      const [desc, setDesc] = useState('');
 
+     
 
     return (
-      <ReviewContext.Provider value={{ review, setReview, desc, setDesc }}>
+      <ReviewContext.Provider
+        value={{ topReview, setTopReview, desc, setDesc, }}
+      >
         {children}
       </ReviewContext.Provider>
     );

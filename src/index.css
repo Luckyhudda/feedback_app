@@ -9,3 +9,10 @@ body{
     background: #161616;
     color: #fff;
 }
+
+
+@media   (max-width: 400px){
+.margin_respo{
+  margin-top: 18px;
+}
+}
